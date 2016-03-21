@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cho family</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS
+    ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="design.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+    <![endif]-->
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- JS
+    ================================================== -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#btn-blog-next").click(function () {
+                $('#blogCarousel').carousel('next')
+            });
+            $("#btn-blog-prev").click(function () {
+                $('#blogCarousel').carousel('prev')
+            });
+
+            $("#btn-client-next").click(function () {
+                $('#clientCarousel').carousel('next')
+            });
+            $("#btn-client-prev").click(function () {
+                $('#clientCarousel').carousel('prev')
+            });
+
+        });
+
+        $(window).load(function(){
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+
+    </script>
+
+</head>
+
+<body class="home">
+<!-- Color Bars (above header)-->
+<div class="color-bar-1"></div>
+<div class="color-bar-2 color-bg"></div>
+
+<div class="container">
+
+    <div class="row header"><!-- Begin Header -->
+
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+            <a href="index.htm"><img src="img/logo2.jpg" alt="" id="logopic"/></a>
+            <h5>Once a Cho always a Cho</h5>
+        </div>
+
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+            <div class="navbar hidden-phone">
+
+                <ul class="nav">
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.htm">Home <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.htm">Full Page</a></li>
+                            <li><a href="index-gallery.htm">Gallery Only</a></li>
+                            <li><a href="index-slider.htm">Slider Only</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="features.htm">Features</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="page-full-width.htm">Full Width</a></li>
+                            <li><a href="page-right-sidebar.htm">Right Sidebar</a></li>
+                            <li><a href="page-left-sidebar.htm">Left Sidebar</a></li>
+                            <li><a href="page-double-sidebar.htm">Double Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery-4col.htm">Gallery <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
+                            <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
+                            <li><a href="gallery-6col.htm">Gallery 6 Column</a></li>
+                            <li><a href="gallery-4col-circle.htm">Gallery 4 Round</a></li>
+                            <li><a href="gallery-single.htm">Gallery Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="blog-style1.htm">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-style1.htm">Blog Style 1</a></li>
+                            <li><a href="blog-style2.htm">Blog Style 2</a></li>
+                            <li><a href="blog-style3.htm">Blog Style 3</a></li>
+                            <li><a href="blog-style4.htm">Blog Style 4</a></li>
+                            <li><a href="blog-single.htm">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page-contact.htm">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                    <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                        <option value="">Navigate...</option>
+                        <option value="index.htm">Home</option>
+                        <option value="index.htm">- Full Page</option>
+                        <option value="index-gallery.htm">- Gallery Only</option>
+                        <option value="index-slider.htm">- Slider Only</option>
+                        <option value="features.htm">Features</option>
+                        <option value="page-full-width.htm">Pages</option>
+                        <option value="page-full-width.htm">- Full Width</option>
+                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
+                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
+                        <option value="page-double-sidebar.htm">- Double Sidebar</option>
+                        <option value="gallery-4col.htm">Gallery</option>
+                        <option value="gallery-3col.htm">- 3 Column</option>
+                        <option value="gallery-4col.htm">- 4 Column</option>
+                        <option value="gallery-6col.htm">- 6 Column</option>
+                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
+                        <option value="gallery-single.htm">- Gallery Single</option>
+                        <option value="blog-style1.htm">Blog</option>
+                        <option value="blog-style1.htm">- Blog Style 1</option>
+                        <option value="blog-style2.htm">- Blog Style 2</option>
+                        <option value="blog-style3.htm">- Blog Style 3</option>
+                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-single.htm">- Blog Single</option>
+                        <option value="page-contact.htm">Contact</option>
+                    </select>
+                </div>
+            </form>
+
+        </div>
+
+    </div><!-- End Header -->
+
+    <div class="row headline"><!-- Begin Headline -->
+
+        <!-- Slider Carousel
+       ================================================== -->
+        <div class="span8">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><a href="images/more1/DSC00675.JPG"><img src="images/more1/DSC00675.JPG" alt="slider" /></a></li>
+                    <li><a href="images/more1/DSC00896.JPG"><img src="images/more1/DSC00896.JPG" alt="slider" /></a></li>
+                    <li><a href="images/more1/DSC00870.JPG"><img src="images/more1/DSC00870.JPG" alt="slider" /></a></li>
+                    <li><a href="images/more1/DSC1.JPG"><img src="images/more1/DSC1.JPG" alt="slider" /></a></li>
+                    <li><a href="images/DSC01081.jpg"><img src="images/DSC01081.jpg" alt="slider" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Headline Text
+        ================================================== -->
+        <div class="span4">
+            <h3>Cho Family<br />
+                Separated but stronger than ever</h3>
+            <p class="lead">Dear parents, <br> we are delighted to be sons of such amazing parents. We wish you guys a lifetime of happiness as you guys embark on next chapter your lives.</p>
+            <p class="lead"></p>
+            <p>sincerely, your sons </p>
+        </div>
+    </div><!-- End Headline -->
+
+    <div class="row gallery-row"><!-- Begin Gallery Row -->
+
+        <div class="span12">
+            <h5 class="title-bg">Parents
+                <small>That we know and love</small>
+                <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
+            </h5>
+
+            <!-- Gallery Thumbnails
+            ================================================== -->
+
+            <div class="row clearfix no-margin">
+                <ul class="gallery-post-grid holder">
+
+                    <!-- Gallery Item 1 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/DSC01087.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/DSC01087.jpg" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/DSC01087.jpg"><img src="images/DSC01087.jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/DSC01087.jpg">All grown up</a>18 years went by in a blink of an eye</span>
+                    </li>
+
+                    <!-- Gallery Item 2 -->
+                    <li class="span3 gallery-item" data-id="id-2" data-type="illustration">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/DSC01079.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/DSC01079.jpg" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/DSC01079.jpg"><img src="images/DSC01079.jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/DSC01079.jpg">Fishing Trip</a>Yea... not a single fish was caught</span>
+                    </li>
+
+                    <!-- Gallery Item 3 -->
+                    <li class="span3 gallery-item" data-id="id-3" data-type="web">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/DSC01089.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/DSC01089.jpg" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/DSC01089.jpg"><img src="images/DSC01089.jpg" alt="Gallery" class="gallerypic gallerypic"></a>
+                        <span class="project-details"><a href="images/DSC01089.jpg">Family dinner at Osaka</a>Sushi there was very delicious</span>
+                    </li>
+
+                    <!-- Gallery Item 4 -->
+                    <li class="span3 gallery-item" data-id="id-4" data-type="video">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/DSC00868.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/DSC00868.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/DSC00868.JPG"><img src="images/more1/DSC00868.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/DSC00868.JPG">Las Vegas</a>Went to watch a circus show</span>
+                    </li>
+
+                    <!-- Gallery Item 5 -->
+                    <li class="span3 gallery-item" data-id="id-5" data-type="web illustration">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/DSC00897.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/DSC00897.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/DSC00897.JPG"><img src="images/more1/DSC00897.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/DSC00897.JPG">UCLA</a>home of the Bruins</span>
+                    </li>
+
+                    <!-- Gallery Item 6 -->
+                    <li class="span3 gallery-item" data-id="id-6" data-type="illustration design">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more/2013-02-0..%20(3).jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more/2013-02-0..%20(3).jpg" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more/2013-02-0..%20(3).jpg"><img src="images/more/2013-02-0..%20(3).jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more/2013-02-0..%20(3).jpg">Family Reunion</a>Gonna miss the good old days</span>
+                    </li>
+
+                    <!-- Gallery Item 7 -->
+                    <li class="span3 gallery-item" data-id="id-7" data-type="design">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/DSCN0726.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/DSCN0726.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/DSCN0726.JPG"><img src="images/more1/DSCN0726.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/DSCN0726.JPG">Don't take pictures</a>while I am eating</span>
+                    </li>
+
+                    <!-- Gallery Item 8 -->
+                    <li class="span3 gallery-item" data-id="id-8" data-type="web video">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more/IMG_0124.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more/IMG_0124.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more/IMG_0124.JPG"><img src="images/more/IMG_0124.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more/IMG_0124.JPG">McDonald Mcflurry</a>Heaven in the form of a cup</span>
+                    </li>
+
+                    <!-- Gallery Item 9 -->
+                    <li class="span3 gallery-item" data-id="id-9" data-type="design">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/2014-12-25.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/2014-12-25.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/2014-12-25.JPG"><img src="images/more1/2014-12-25.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/2014-12-25.JPG">New Years</a>Added a new member to the Cho family</span>
+                    </li>
+
+                    <!-- Gallery Item 10 -->
+                    <li class="span3 gallery-item" data-id="id-10" data-type="web design">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more/DSCN1965.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more/DSCN1965.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more/DSCN1965.JPG"><img src="images/more/DSCN1965.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more/DSCN1965.JPG">Parents</a>A complementary photo from Dessy</span>
+                    </li>
+
+                    <!-- Gallery Item 11 -->
+                    <li class="span3 gallery-item" data-id="id-11" data-type="illustration">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/2013-08-03.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/2013-08-03.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/2013-08-03.JPG"><img src="images/more1/2013-08-03.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/2013-08-03.JPG">Horse Back riding</a>with cousins and aunt</span>
+                    </li>
+
+                    <!-- Gallery Item 12 -->
+                    <li class="span3 gallery-item" data-id="id-12" data-type="illustration video">
+                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="images/more1/023.JPG" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="images/more1/023.JPG" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="images/more1/023.JPG"><img src="images/more1/023.JPG" alt="Gallery"></a>
+                        <span class="project-details"><a href="images/more1/023.JPG">UCSD triton day</a>Ate ramen and sushi at UCSD</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- End Gallery Row -->
+
+</div>
+
+</body>
+</html>
